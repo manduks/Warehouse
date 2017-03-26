@@ -1,0 +1,9 @@
+.App-advertisement {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

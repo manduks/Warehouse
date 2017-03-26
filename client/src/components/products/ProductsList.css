@@ -1,0 +1,6 @@
+.App-products-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+}

@@ -1,0 +1,19 @@
+/*
+$primary: #D7274D; //redish
+$secondary: #343358; //purpleish
+*/
+.App-header {
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.08);
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #DB2752;
+  font-family: WorkSans-Medium;
+  flex-direction: column;
+}
+.App-header span {
+  font-family: WorkSans-Light;
+  font-size: 16px;
+}
