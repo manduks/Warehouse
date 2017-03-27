@@ -7,9 +7,12 @@ function filter(query, cb) {
     .then(parseJSON)
     .then(cb);
 }
+function serializeObject(obj) {
+  return Object.keys(obj).map(k => `${encodeURIComponent(k)}=${encodeURIComponent(obj[k])}`).join('&');
+}
 
-function streamProducts(query, cb) {
-  oboe('/api?limit=502')
+function streamProducts(params, cb) {
+  oboe(`/api?${serializeObject(params)}`)
    .done(cb)
    .fail(function(error) {
      console.log(error); // eslint-disable-line no-console

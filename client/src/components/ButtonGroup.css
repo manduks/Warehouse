@@ -1,0 +1,39 @@
+.App-btn-group button {
+    background-color: #FFF;
+    border: 1px solid #DB2752;
+    color: #DB2752;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+    font-size: 16px;
+}
+
+.App-btn-group button:not(:last-child) {
+    border-right: none;
+}
+
+/* Clear floats (clearfix hack) */
+.App-btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+.App-btn-group button:hover {
+    background-color: #DB2752;
+    color: white;
+}
+.App-btn-group button:active {
+    background-color: #DB2752;
+    color: white;
+}
+.App-btn-group button:focus {
+    background-color: #DB2752;
+    color: white;
+}
+
+.App-btn-group-selected {
+  background-color: #DB2752 !important;
+  color: white !important;
+}

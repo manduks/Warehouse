@@ -10,6 +10,17 @@
   "devDependencies": {
     "react-scripts": "0.9.5"
   },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "allowImportExportEverywhere": true
+    },
+    "extends": [
+      "airbnb"
+    ],
+    "globals": { },
+    "rules": { }
+  },
   "proxy": "http://localhost:8000/",
   "scripts": {
     "start": "react-scripts start",
