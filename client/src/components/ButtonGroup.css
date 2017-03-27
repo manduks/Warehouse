@@ -5,7 +5,7 @@
     padding: 10px 24px;
     cursor: pointer;
     float: left;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .App-btn-group button:not(:last-child) {
