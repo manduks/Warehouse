@@ -1,18 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 
-import Header from './components/header/Header.jsx';
-import ProductsList from './components/products/ProductsList.jsx';
+import Header from './components/header/Header';
+import ProductsList from './components/products/ProductsList';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Header/>
-        <ProductsList/>
-      </div>
-    );
-  }
-}
-
+const App = function App() {
+  return (
+    <div className="App">
+      <Header />
+      <ProductsList />
+    </div>
+  );
+};
 export default App;

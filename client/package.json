@@ -5,7 +5,8 @@
   "dependencies": {
     "oboe": "^2.1.3",
     "react": "15.4.2",
-    "react-dom": "15.4.2"
+    "react-dom": "15.4.2",
+    "react-waypoint": "^5.2.0"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
@@ -18,8 +19,14 @@
     "extends": [
       "airbnb"
     ],
-    "globals": { },
-    "rules": { }
+    "globals": {
+      "document": true,
+      "window": true,
+      "it": true
+    },
+    "rules": {
+      "react/forbid-prop-types": 0
+    }
   },
   "proxy": "http://localhost:8000/",
   "scripts": {

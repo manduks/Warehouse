@@ -6,22 +6,24 @@ class ButtonGroup extends Component {
     super();
     this.handleClick = this.handleClick.bind(this);
     this.state = {
-        selected: ''
-    }
+      selected: '',
+    };
   }
   handleClick(text) {
     this.props.onClick(text);
     this.setState({
-      selected: text
+      selected: text,
     });
   }
   renderButtons() {
     return this.props.buttons.map(text => (
       <button
-        className={this.state.selected === text ? 'App-btn-group-selected': ''}
+        className={this.state.selected === text ? 'App-btn-group-selected' : ''}
         key={text}
         onClick={this.handleClick.bind(null, text)}
-        >{text}</button>
+      >
+        {text}
+      </button>
     ));
   }
   render() {
@@ -32,5 +34,10 @@ class ButtonGroup extends Component {
     );
   }
 }
+
+ButtonGroup.propTypes = {
+  onClick: React.PropTypes.func.isRequired,
+  buttons: React.PropTypes.array.isRequired,
+};
 
 export default ButtonGroup;

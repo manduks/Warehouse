@@ -1,13 +1,12 @@
 .App-advertisement {
-  width: 100%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #FFF;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 10px;
+  margin: auto;
+  margin-top: 15px;
 }
-.App-advertisement:hover {
-  border: 2px solid #9E8ABC;
+.App-advertisement img {
+  margin: 20px;
 }

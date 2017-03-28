@@ -4,17 +4,21 @@ const insertEach = 20;
 
 function generateRandomAdd() {
   let adNumber;
-  if (ads.length >= numberOfAds) { // if we dont have any more adds
+  if (ads.length >= numberOfAds) {
+    // if we dont have any more adds
     return -1;
   }
-  adNumber = Math.floor(Math.random()* numberOfAds);
+  adNumber = Math.floor(Math.random() * numberOfAds);
+  // we start searching for another ad
   while (ads.indexOf(adNumber) !== -1) {
-    adNumber = Math.floor(Math.random()* numberOfAds);
-    if (ads.length >= numberOfAds) { // we have used all adds
+    adNumber = Math.floor(Math.random() * numberOfAds);
+    // we have used all adds
+    if (ads.length >= numberOfAds) {
       adNumber = -1;
       break;
     }
   }
+
   ads.push(adNumber); // add used add
   return adNumber;
 }

@@ -13,6 +13,11 @@
   height: 50px;
   position: fixed;
   z-index: 10;
-  bottom: 5px;
+  bottom: 30px;
   right: 20px;
+}
+.end-of-list {
+  text-align: center;
+  color: #52307F;
+  width: 100%;
 }
