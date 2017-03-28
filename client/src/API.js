@@ -6,7 +6,7 @@ function serializeObject(obj) {
     .join('&');
 }
 function streamProducts(params, cb) {
-  oboe(`/api?${serializeObject(params)}`).done(cb).fail((error) => {
+  oboe(`http://localhost:3000/api?${serializeObject(params)}`).done(cb).fail((error) => {
     console.log(error); // eslint-disable-line no-console
   });
 }

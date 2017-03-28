@@ -120,9 +120,9 @@ class ProductsList extends Component {
     let addNumber;
     let products = this.state.products;
 
-    if (!products.length) {
+    /*if (!products.length) {
       products = API.getEmptyList();
-    }
+    }*/
 
     products.forEach((p, i) => {
       productsAndAds.push(<Product key={p.id} {...p} />);

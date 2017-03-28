@@ -9,7 +9,10 @@
     "react-waypoint": "^5.2.0"
   },
   "devDependencies": {
-    "react-scripts": "0.9.5"
+    "enzyme": "^2.8.0",
+    "react-addons-test-utils": "^15.4.2",
+    "react-scripts": "0.9.5",
+    "react-test-renderer": "^15.4.2"
   },
   "eslintConfig": {
     "parser": "babel-eslint",
@@ -22,7 +25,12 @@
     "globals": {
       "document": true,
       "window": true,
-      "it": true
+      "it": true,
+      "expect": true,
+      "describe": true,
+      "beforeEach": true,
+      "afterEach": true,
+      "jest": true
     },
     "rules": {
       "react/forbid-prop-types": 0
