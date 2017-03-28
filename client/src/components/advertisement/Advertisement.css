@@ -10,3 +10,9 @@
 .App-advertisement img {
   margin: 20px;
 }
+
+@media screen and (max-width: 900px) {
+  .App-advertisement {
+    width: 100%;
+  }
+}

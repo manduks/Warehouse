@@ -97,7 +97,7 @@ class ProductsList extends Component {
     return true;
   }
   handleFilter(text) {
-    this.params.sort = text;
+    this.params.sort = text.toLowerCase();
     this.params.page = 1;
 
     // we reset the ads to show them again

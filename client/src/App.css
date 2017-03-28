@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'WorkSans-Regular';
+  src: url('/fonts/WorkSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'WorkSans-Light';
+  src: url('/fonts/WorkSans-Light.ttf');
+}
+@font-face {
+  font-family: 'WorkSans-Medium';
+  src: url('/fonts/WorkSans-Medium.ttf');
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #F5F5F5;
+  font-family: WorkSans-Medium;
+}
+
 h1 {
   font-size: 26px;
 }

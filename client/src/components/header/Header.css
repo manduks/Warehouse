@@ -18,3 +18,12 @@ $secondary: #343358; //purpleish
   font-size: 16px;
   color: #52307F;
 }
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 22px;
+  }
+  .App-header {
+    height: 200px;
+  }
+}

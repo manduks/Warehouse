@@ -36,6 +36,7 @@
       "react/forbid-prop-types": 0
     }
   },
+  "homepage": ".",
   "proxy": "http://localhost:8000/",
   "scripts": {
     "start": "react-scripts start",
